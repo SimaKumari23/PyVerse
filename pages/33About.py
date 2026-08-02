@@ -3,13 +3,6 @@ from streamlit_extras.stylable_container import stylable_container
 
 st.set_page_config(page_title="About PyVerse", layout="wide")
 
-# Login Check
-if st.session_state.get("username", False):
-    pass
-else:
-    st.warning("First Login !!!")
-    st.stop()
-
 # ---------------- Back Button ----------------
 with stylable_container(
     key="back_btn",
