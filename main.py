@@ -417,7 +417,7 @@ with col2:
             st.switch_page("pages/33About.py")
 
         if st.button("Privacy Policy"):
-            st.switch_page("pages/34Privacy.py")
+            st.switch_page("pages/34privacy.py")
 
         if st.button("Terms of Use"):
             st.switch_page("pages/35Terms.py")
