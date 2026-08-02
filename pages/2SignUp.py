@@ -5,15 +5,9 @@ import smtplib
 server=smtplib.SMTP("smtp.gmail.com",587)
 server.starttls()
 server.login("sk3538970@gmail.com","ccaxauouqcrinfzo")
-conn=pymongo.MongoClient("mongodb+srv://sk3538970_db_user:Yn1qjlwb3oJ4z6K1@pyversedb.bxahnpm.mongodb.net/?appName=PyverseDB")
+conn = pymongo.MongoClient("mongodb+srv://sk3538970_db_user:Yn1qj1wb3oJ4z6K1@pyversedb.bxahnpm.mongodb.net/ojt?retryWrites=true&w=majority")
 mydb=conn["ojt"]#database of mongodb
 my=mydb["user_info"]#it is collection(table)
-try:
-    conn.server_info()
-    st.success("MongoDB Connected ✅")
-except Exception as e:
-    st.error("Connection Failed ❌")
-    st.write(e)
 st.markdown("""
 <style>
 .stApp{
