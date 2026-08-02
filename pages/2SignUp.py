@@ -2,9 +2,6 @@ import streamlit as st
 from streamlit_extras.stylable_container import stylable_container
 import pymongo
 import smtplib
-import time
-with st.spinner("Loading....."):
-       time.sleep(5) 
 server=smtplib.SMTP("smtp.gmail.com",587)
 server.starttls()
 server.login("sk3538970@gmail.com","ccaxauouqcrinfzo")
