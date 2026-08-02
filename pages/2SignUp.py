@@ -8,7 +8,7 @@ with st.spinner("Loading....."):
 server=smtplib.SMTP("smtp.gmail.com",587)
 server.starttls()
 server.login("sk3538970@gmail.com","ccaxauouqcrinfzo")
-conn=pymongo.MongoClient("mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.8.2")
+conn=pymongo.MongoClient("mongodb+srv://sk3538970_db_user:Yn1qjlwb3oJ4z6K1@pyversedb.bxahnpm.mongodb.net/?appName=PyverseDB")
 mydb=conn["ojt"]#database of mongodb
 my=mydb["user_info"]#it is collection(table)
 st.markdown("""
