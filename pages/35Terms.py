@@ -3,13 +3,6 @@ from streamlit_extras.stylable_container import stylable_container
 
 st.set_page_config(page_title="Terms of Use", layout="wide")
 
-# ---------------- LOGIN CHECK ----------------
-if st.session_state.get("username", False):
-    pass
-else:
-    st.warning("First Login !!!")
-    st.stop()
-
 # ---------------- BACK BUTTON ----------------
 with stylable_container(
     key="terms_back",
