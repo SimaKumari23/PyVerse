@@ -2,14 +2,6 @@ import streamlit as st
 from streamlit_extras.stylable_container import stylable_container
 
 st.set_page_config(page_title="Privacy Policy", layout="wide")
-
-# ---------------- LOGIN CHECK ----------------
-if st.session_state.get("username", False):
-    pass
-else:
-    st.warning("First Login !!!")
-    st.stop()
-
 # ---------------- BACK BUTTON ----------------
 with stylable_container(
     key="privacy_back",
