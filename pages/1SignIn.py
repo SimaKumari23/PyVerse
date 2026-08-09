@@ -1,7 +1,7 @@
 import streamlit as st
 from streamlit_extras.stylable_container import stylable_container
 import pymongo
-conn = pymongo.MongoClient("mongodb+srv://sk3538970_db_user:Yn1qjlwb3oJ4z6K1@pyversedb.bxahnpm.mongodb.net/ojt?retryWrites=true&w=majority")
+conn = pymongo.MongoClient("mongodb+srv://sk3538970_db_user:maheshgupta@pyversedb.bxahnpm.mongodb.net/?appName=PyverseDB")
 mydb=conn["ojt"]
 my=mydb["user_info"]
 st.markdown("""
