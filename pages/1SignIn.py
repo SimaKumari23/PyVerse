@@ -1,9 +1,6 @@
 import streamlit as st
 from streamlit_extras.stylable_container import stylable_container
 import pymongo
-import time
-with st.spinner("Loading....."):
-       time.sleep(5) 
 conn = pymongo.MongoClient("mongodb+srv://sk3538970_db_user:Yn1qjlwb3oJ4z6K1@pyversedb.bxahnpm.mongodb.net/ojt?retryWrites=true&w=majority")
 mydb=conn["ojt"]
 my=mydb["user_info"]
